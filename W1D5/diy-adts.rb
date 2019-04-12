@@ -1,17 +1,30 @@
 class Stack
     def initialize
-        Array.new
+        @stack = []
+    end
+
+    def contents
+      @stack
     end
 
     def push(el)
-      self << el
+      @stack << el
     end
 
     def pop
-      # removes one element from the stack
+      @stack.pop
+      @stack
     end
 
     def peek
-      # returns, but doesn't remove, the top element in the stack
+      @stack[-1]
     end
   end
+
+  swag_stack = Stack.new
+  puts swag_stack.contents
+  swag_stack.push(2)
+  puts swag_stack.contents
+  swag_stack.push(4)
+  puts swag_stack.contents
+  swag_stack.pop
