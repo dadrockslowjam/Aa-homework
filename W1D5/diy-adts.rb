@@ -1,14 +1,11 @@
 class Stack
+  attr_reader :stack
     def initialize
         @stack = []
     end
 
-    def contents
-      @stack
-    end
-
     def push(el)
-      @stack << el
+      @stack.push(el)
     end
 
     def pop
@@ -21,10 +18,50 @@ class Stack
     end
   end
 
-  swag_stack = Stack.new
-  puts swag_stack.contents
-  swag_stack.push(2)
-  puts swag_stack.contents
-  swag_stack.push(4)
-  puts swag_stack.contents
-  swag_stack.pop
+  
+
+  class Queue
+
+    attr_reader :line
+
+    def initialize
+      @line = []
+    end
+
+    def enqueue(el)
+      @line.push(el)
+    end
+
+    def dequeue
+      @line.shit
+      @line
+    end
+
+    def peek
+      @line[0]
+    end
+
+  end
+
+  class Map
+
+    def initialize
+
+    end
+
+    def set_key_value
+
+    end
+
+    def get_key
+
+    end
+
+    def delete_key
+
+    end
+
+    def show
+
+    end
+  end
